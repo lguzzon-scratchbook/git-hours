@@ -1,18 +1,31 @@
 {
-  "name": "git-hours",
-  "version": "1.5.0",
-  "description": "Estimate time spent on a git repository",
-  "main": "./src/index.js",
+  "author": "Kimmo Brunfeldt",
   "bin": {
     "git-hours": "./src/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kimmobrunfeldt/git-hours/issues"
+  },
+  "dependencies": {
+    "commander": "^10.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "nodegit": "^0.27.0"
+  },
+  "description": "Estimate time spent on a git repository",
+  "devDependencies": {
+    "bluebird": "^3.7.2",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "np": "^7.7.0"
   },
   "files": [
     "src/**/*"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kimmobrunfeldt/git-hours.git"
-  },
+  "homepage": "https://github.com/kimmobrunfeldt/git-hours",
   "keywords": [
     "git",
     "time",
@@ -21,33 +34,17 @@
     "clock",
     "hours"
   ],
-  "author": "Kimmo Brunfeldt",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kimmobrunfeldt/git-hours/issues"
-  },
-  "homepage": "https://github.com/kimmobrunfeldt/git-hours",
-  "dependencies": {
-    "bluebird": "^3.7.2",
-    "commander": "^8.0.0",
-    "lodash": "^4.17.21",
-    "moment": "^2.10.6",
-    "nodegit": "^0.27.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.30.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "mocha": "^9.0.2",
-    "nodemon": "^2.0.9",
-    "np": "^7.5.0"
+  "main": "./src/index.js",
+  "name": "git-hours",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimmobrunfeldt/git-hours.git"
   },
   "scripts": {
     "dev": "npx nodemon --exec 'npm run test && npm run lint'",
-    "test": "npx mocha -R spec",
-    "lint": "npx eslint --ext js ."
+    "lint": "npx eslint --ext js .",
+    "test": "npx mocha -R spec"
   },
-  "engines": {
-    "node": "^14.x"
-  }
+  "version": "1.5.0"
 }
