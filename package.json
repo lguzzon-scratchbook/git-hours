@@ -7,6 +7,7 @@
     "url": "https://github.com/kimmobrunfeldt/git-hours/issues"
   },
   "dependencies": {
+    "bluebird": "^3.7.2",
     "commander": "^10.0.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
@@ -14,7 +15,6 @@
   },
   "description": "Estimate time spent on a git repository",
   "devDependencies": {
-    "bluebird": "^3.7.2",
     "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
